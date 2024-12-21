@@ -1,0 +1,64 @@
+class Applications{
+	static String Apps[] = {null,null,null,null,null,null,null,null};
+	static String newApps[] = {null,null,null,null,null,null,null};
+	static int index;
+	
+	public static boolean savePlanets(String planetName){
+		
+		boolean isAdded = false;
+		if(planetName != null){
+			Planets[index++] = planetName;
+			isAdded = true;
+		}else{
+			System.out.println("Planet Name are Null/Empty");
+		}
+		
+	return isAdded;
+	}
+	
+	public static void fetchPlanets(){
+		System.out.println("List of Insurence");
+		for( String planetName : Planets){
+			System.out.println("Added file is: " + planetName);
+		}
+	}
+	
+	public static boolean updatePlanetName(String existingName, String updatedName){
+		boolean isUpdated = false;
+		for(int begin=0; begin<Planets.length; begin++){
+			if(Planets[begin] == existingName){
+				Planets[begin] = updatedName;
+				isUpdated = true;
+				break;
+			}
+		}
+		if(isUpdated == false) System.out.println(existingName+ " Not Found");
+		
+	return isUpdated;
+	}
+	
+	public static boolean delPlanets(String delName){
+		System.out.println("Delete operation method started");
+		boolean isDeleted = false;
+		
+		for(int index=0,newIndex =0;  index < Planets.length ; index++){
+			
+			if(Planets[index] != delName){
+				newPlanets[newIndex++] = Planets[index];
+				
+			}else{
+				isDeleted =true;
+			}
+		}
+			
+		System.out.println("Delete operation method Ended");
+		return isDeleted;
+	}
+	
+	
+	public static void getNewPlanets(){
+		for( String newArrEle : newPlanets){
+			System.out.println(newArrEle);
+		}
+	}
+}
