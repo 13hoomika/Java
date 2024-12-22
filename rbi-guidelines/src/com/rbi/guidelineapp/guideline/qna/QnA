@@ -1,0 +1,19 @@
+# can class inherit from multiple classes => NO "Class cannot extend multiple classes"
+    public class Child extends Parent,Parent1{ }
+# can class inherit only single class : Yes
+# can class implement multiple interface: Yes "Class can impli multiple classes"
+    public class Kotak implements RBIGuidelines, SwissBank{ }
+# can an interface inherit : yes
+# can an interface inherit a class: No  -> class by default contains concrete class, interface contains abstart methods
+# can interface inherit multiple interfaces: YES
+    public interface RBIGuidelines extends SwissBank,WorlBank {}
+# can an interface impl interface: NO -> interface can not impl interface.
+# can class impl and inherit : No
+    but can inherit then impl => public class KotakBangalore extends KotakBank implements RBIGuidelines {}
+# can write cons for interface : No ->  obj can not be created for interface.
+# can write cons for abstract class : Yes
+# can write overload cons in abstract class: Yes -> only through subclass.
+# can i over-load a cons: yes
+# can i over-ride a cons: NO -> constructors are not inherited by subclasses and do not have a return type
+
+
