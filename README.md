@@ -1,2 +1,4 @@
 # Java
-My journey 
+## Language
+This project is written in **Java**.
+
