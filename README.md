@@ -1,4 +1,3 @@
-# Java
-## Language
-This project is written in **Java**.
+![Language](https://img.shields.io/badge/language-Java-orange)
+
 
